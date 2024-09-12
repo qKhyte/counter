@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 12%);
+    text-align: center;
+    user-select: none;
+}
+
+#counter-text {
+    font-size: 100px;
+    color: rgb(138, 138, 255);
+}
+
+.counter-button {
+    background-color: rgb(138, 138, 255);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 30px;
+    border: 3px solid rgb(117, 117, 255);
+    transition: all 0.3s ease;
+    transform: scale(1);
+    position: relative;
+}
+
+.counter-button:hover {
+    cursor: pointer;
+    background-color: rgb(117, 117, 255); 
+    transform: scale(1.1);
+}
+
+.counter-button:active {
+    transform: scale(0.95); 
+    background-color: rgb(100, 100, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#reset-button {
+    translate: 0px 80px;
+}
+
+#textbox-div {
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    transform: translateY(70px);
+    padding: 20px;
+    margin: 20px;
+}
+
+#textbox {
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+    height: 58px;
+    width: 400px;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    line-height: 1.3;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 3px solid black;
+    background-color: rgb(138, 138, 255);
+    color: white;   
+    outline: none;
+    border: 3px solid rgb(117, 117, 255);
+}
+
+#textbox::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+
+#set-button {
+    display: flex;
+    translate: 0px 60px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center; /* Horizontal center */
+}
